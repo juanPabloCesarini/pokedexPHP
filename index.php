@@ -1,3 +1,3 @@
 <?php
-include ("./views/pokedex_view.php");
+    include ("./views/pokedex_view.php");
 ?>

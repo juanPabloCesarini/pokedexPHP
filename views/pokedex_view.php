@@ -12,9 +12,9 @@ foreach ($json->abilities as $ab) {
   
 echo "<h2>TIPO</h2>";
 
-echo $json->types[0]->type->name;
+echo $pokeName;
 echo "<h2>FOTOS</h2>";
-echo '<img src="'.$json->sprites->front_default.'"width="200">'; 
-echo '<img src="'.$json->sprites->back_default.'"width="200">';
+echo '<img src="'.$pokeSpriteFront.'"width="200">'; 
+echo '<img src="'.$pokeSpriteBack.'"width="200">';
 
 ?>
