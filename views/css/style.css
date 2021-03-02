@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-family: 'DotGothic16', monospace;
+}
+header p{
+    font-family: 'DotGothic16', monospace;
+    font-size: 20px;
+    vertical-align: baseline;
+}
+header{
+    width: 100%;
+    border-left: #C83946 solid 10px;
+    border-right: #C83946 solid 10px;
+    border-bottom: #C83946 solid 10px;
+    border-top: none;
+    border-radius: 0 0 50px 50px;
+}
+header *{
+    display: inline-block;
+    vertical-align: baseline;
+}
+header h1{
+    margin-bottom: 0;
+}
+header span{
+    width: 70%;
+    margin: 0 15% 0 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input[type="text"]{
+    border: #C83956 solid 5px;
+    border-radius: 5px;
+    height: 75px;
+    width: 900px;
+    font-size: 20px;
+}
+input[type="text"]:active{
+    border: #C83956 solid 5px;
+    border-radius: 5px;
+}
+.img-header{
+    width: 150px;
+    height: auto;
+}
+/* Divs por tipo */
+.type{
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 5px;
+    color: #fafafa;
+    font-family: 'DotGothic16', sans-serif;
+    display: inline-block;
+    padding: 2px 2px 4px 2px;
+}
+.normal{
+    border-color: #A8A878;
+    background-color: #A8A878;
+}
+.normal::before{
+    content: "normal";
+}
+.water{
+    border-color: #6890F0;
+    background-color: #6890F0;
+}
+.water::before{
+    content: "agua";
+}
+.electric{
+    border-color: #F8D030;
+    background-color: #F8D030;
+}
+.electric::before{
+    content: "el�ctrico";
+}
+.fighting{
+    border-color: #C03028;
+    background-color: #C03028;
+}
+.fighting::before{
+    content: "luchador";
+}
+.ground{
+    border-color: #E0C068;
+    background-color: #e0c068;
+}
+.ground::before{
+    content: "tierra";
+}
+.psychic{
+    border-color: #F85888;
+    background-color: #F85888;
+}
+.psychic::before{
+    content: "ps�quico";
+}
+.rock{
+    border-color: #B8A038;
+    background-color: #B8A038;
+}
+.rock::before{
+    content: "piedra";
+}
+.dark{
+    border-color: #705848;
+    background-color: #705848;
+}
+.dark::before{
+    content: "oscuro";
+}
+.steel{
+    border-color: #B8B8D0;
+    background-color: #B8B8D0;
+}
+.steel::before{
+    content: "acero";
+}
+.fire{
+    border-color: #F08030;
+    background-color: #F08030;
+}
+.fire::before{
+    content: "fuego";
+}
+.grass{
+    border-color: #78C850;
+    background-color: #78C850;
+}
+.grass::before{
+    content: "hierba";
+}
+.ice{
+    border-color: #98D8D8;
+    background-color: #98D8D8;
+}
+.ice::before{
+    content: "hielo";
+}
+.poison{
+    border-color: #A040A0;
+    background-color: #A040A0;
+}
+.poison::before{
+    content: "veneno";
+}
+.flying{
+    border-color: #A890F0;
+    background-color: #A890F0;
+}
+.flying::before{
+    content: "volador";
+}
+.bug{
+    border-color: #A8B820;
+    background-color: #A8B820;
+}
+.bug::before{
+    content: "bicho";
+}
+.ghost{
+    border-color: #705898;
+    background-color: #705898;
+}
+.ghost::before{
+    content: "fantasma";
+}
+.dragon{
+    border-color: #7038F8;
+    background-color: #7038F8;
+}
+.dragon::before{
+    content: "drag�n";
+}
+.fairy{
+    border-color: #F0B6BC;
+    background-color: #F0B6BC;
+}
+.fairy::before{
+    content: "hada";
+}
