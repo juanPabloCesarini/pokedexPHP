@@ -42,7 +42,14 @@ foreach ($json->abilities as $ab) {
 <?php
 echo "<h2>Type</h2>";
 
+<<<<<<< HEAD
 echo $json->types[0]->type->name;
+=======
+echo $pokeName;
+echo "<h2>FOTOS</h2>";
+echo '<img src="'.$pokeSpriteFront.'"width="200">'; 
+echo '<img src="'.$pokeSpriteBack.'"width="200">';
+>>>>>>> 4349f4b99777510eded8561b1548c7187fe166d4
 
 ?>
 </body>
