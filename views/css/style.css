@@ -2,18 +2,38 @@
     box-sizing: border-box;
     font-family: 'DotGothic16', monospace;
 }
+body{
+    background-color: #fafafa;
+}
+h2{
+    font-size: 1.8em;
+}
+.container {
+    width: 70%;
+}
 header p{
     font-family: 'DotGothic16', monospace;
     font-size: 20px;
     vertical-align: baseline;
 }
-header{
+header, footer{
     width: 100%;
-    border-left: #C83946 solid 10px;
-    border-right: #C83946 solid 10px;
-    border-bottom: #C83946 solid 10px;
-    border-top: none;
+    border: #C83946 solid 10px;
+    background-color: #fafafa;
+}
+header {
     border-radius: 0 0 50px 50px;
+}
+footer {
+    border-radius: 50px 50px 0 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    
+}
+footer a img{
+    height: 20px;
+    width: auto;
 }
 header *{
     display: inline-block;
@@ -22,8 +42,12 @@ header *{
 header h1{
     margin-bottom: 0;
 }
+.img-header{
+    width: 150px;
+    height: auto;
+    transform: translate(0px, 20px);
+}
 header span{
-    width: 70%;
     margin: 0 15% 0 15%; 
     display: flex;
     align-items: center;
@@ -31,21 +55,90 @@ header span{
 }
 p {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 
 }
-input[type="text"]{
-    border: #C83956 solid 5px;
+#search-bar{
+    margin: 55px auto;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    border: #7f7f7f solid 5px;
+    padding: 1px 6px;
+    margin-right: 8px;
     border-radius: 5px;
-    height: 75px;
-    width: 900px;
+    height: 55px;
+    width: 80%;
     font-size: 20px;
+    color: #4A80E9;
 }
-input[type="text"]:active input[type="text"]:focus{
-    border: #C83956 solid 5px;
+#search, #search::placeholder, footer a{
+    color: #4A80E9;
+}
+#search:focus {
+    outline: none;
+}
+#search:active, #search:focus{
+    border: #2cbe48 solid 5px;
+}
+#btn-search{
+    border: #4A80E9 solid 5px;
+    border-radius: 5px 50px 5px 5px;
+    background-color: #CEDCF8;
+    height: 55px;
+    width: 20%;
+    outline: none;
+    background-image: url('../img/search1.png');
+    background-repeat: no-repeat;
+    background-position: 45%;
+    background-size: 35px;
+    transition-duration: all .6s;
+}
+#btn-search:hover{
+    background-color: #bdebc6;
+    border-color: #2cbe48;
+    background-image: url('../img/search2.png');
+    transition-duration: .6s;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#title{
+    margin: 0 1em; 
+}
+#card-container{
+    display: flex;
+    flex-direction: row;
+}
+#img-container{
+    border: #7f7f7f solid 5px;
     border-radius: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
-.img-header{
-    width: 150px;
+#img-container img{
+    width: 200px;
     height: auto;
+}
+#data-container{
+    display: flex;
+    align-items: flex-end;
+}
+#data-container-col1, #data-container-col2, #data-container-col3{
+    margin: 0.75em;
+}
+#data-container-col1{
+    margin-left: 3em;
+}
+footer span{
+    color: #C83946;
+}
+footer a:hover {
+    color: #2cbe48;
+    transition-duration: .6s;
 }
 /* Divs por tipo */
 .type{
@@ -69,117 +162,117 @@ input[type="text"]:active input[type="text"]:focus{
     background-color: #6890F0;
 }
 .water::before{
-    content: "agua";
+    content: "water";
 }
 .electric{
     border-color: #F8D030;
     background-color: #F8D030;
 }
 .electric::before{
-    content: "el�ctrico";
+    content: "electric";
 }
 .fighting{
     border-color: #C03028;
     background-color: #C03028;
 }
 .fighting::before{
-    content: "luchador";
+    content: "fighting";
 }
 .ground{
     border-color: #E0C068;
     background-color: #e0c068;
 }
 .ground::before{
-    content: "tierra";
+    content: "ground";
 }
 .psychic{
     border-color: #F85888;
     background-color: #F85888;
 }
 .psychic::before{
-    content: "ps�quico";
+    content: "psychic";
 }
 .rock{
     border-color: #B8A038;
     background-color: #B8A038;
 }
 .rock::before{
-    content: "piedra";
+    content: "rock";
 }
 .dark{
     border-color: #705848;
     background-color: #705848;
 }
 .dark::before{
-    content: "oscuro";
+    content: "dark";
 }
 .steel{
     border-color: #B8B8D0;
     background-color: #B8B8D0;
 }
 .steel::before{
-    content: "acero";
+    content: "steel";
 }
 .fire{
     border-color: #F08030;
     background-color: #F08030;
 }
 .fire::before{
-    content: "fuego";
+    content: "fire";
 }
 .grass{
     border-color: #78C850;
     background-color: #78C850;
 }
 .grass::before{
-    content: "hierba";
+    content: "grass";
 }
 .ice{
     border-color: #98D8D8;
     background-color: #98D8D8;
 }
 .ice::before{
-    content: "hielo";
+    content: "ice";
 }
 .poison{
     border-color: #A040A0;
     background-color: #A040A0;
 }
 .poison::before{
-    content: "veneno";
+    content: "poison";
 }
 .flying{
     border-color: #A890F0;
     background-color: #A890F0;
 }
 .flying::before{
-    content: "volador";
+    content: "flying";
 }
 .bug{
     border-color: #A8B820;
     background-color: #A8B820;
 }
 .bug::before{
-    content: "bicho";
+    content: "bug";
 }
 .ghost{
     border-color: #705898;
     background-color: #705898;
 }
 .ghost::before{
-    content: "fantasma";
+    content: "ghost";
 }
 .dragon{
     border-color: #7038F8;
     background-color: #7038F8;
 }
 .dragon::before{
-    content: "drag�n";
+    content: "dragon";
 }
 .fairy{
     border-color: #F0B6BC;
     background-color: #F0B6BC;
 }
 .fairy::before{
-    content: "hada";
+    content: "fairy";
 }
