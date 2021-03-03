@@ -8,9 +8,5 @@ $api = curl_init($url);
 // Controller makes a curl operation so
 // now we make the JSON values into variables
 
-$pokeName = $json->types[0]->type->name;
-$pokeType = $json->types[1]->type->name;
-$pokeSpriteFront = $json->sprites->front_default;
-$pokeSpriteBack = $json->sprites->back_default;
-
+// HABRIA QUE HACER UN CICLO FOR PARA OBTENER DE A UNO OOS 802 ELEMENTOS Y PASARLOS A UN UNICO JSON PARA USAR EL BUSCADOR
 ?>

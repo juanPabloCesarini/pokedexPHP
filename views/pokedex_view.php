@@ -24,8 +24,13 @@ include("././controllers/pokedex_controller.php");
   </span>
 </header>
 <section class="search-bar">
-    <input type="text" placeholder="Type in pokémon name"></input>
+    <input type="text" placeholder="Type in pokémon name" id="search-form"></input>
+    <button id="search-btn">Search</button>
 </section>
+
+<div id="result">
+
+</div>
 <h2>Habilidades</h2>
 <?php 
 foreach ($json->abilities as $ab) {
@@ -42,15 +47,13 @@ foreach ($json->abilities as $ab) {
 <?php
 echo "<h2>Type</h2>";
 
-<<<<<<< HEAD
 echo $json->types[0]->type->name;
-=======
 echo $pokeName;
 echo "<h2>FOTOS</h2>";
 echo '<img src="'.$pokeSpriteFront.'"width="200">'; 
 echo '<img src="'.$pokeSpriteBack.'"width="200">';
->>>>>>> 4349f4b99777510eded8561b1548c7187fe166d4
 
 ?>
+<script src="./views/js/main.js"></script>
 </body>
 </html>
